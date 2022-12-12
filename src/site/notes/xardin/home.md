@@ -5,5 +5,5 @@
 
 El mio xardín dixital
 
-[[SysAdmin/SC - Keycloak/SC - MFA\|SC - MFA]]
-[[SysAdmin/NGINX + Modsecurity\|NGINX + Modsecurity]]
+[[xardin/SC - MFA\|SC - MFA]]
+[[xardin/NGINX + Modsecurity\|NGINX + Modsecurity]]
