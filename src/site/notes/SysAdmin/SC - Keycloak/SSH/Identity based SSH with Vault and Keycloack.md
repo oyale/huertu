@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"sc-keycloak/ssh-vault-keycloack/","permalink":"/sc-keycloak/ssh-vault-keycloack/"}
+{"dg-publish":true,"permalink":"/sys-admin/sc-keycloak/ssh/identity-based-ssh-with-vault-and-keycloack/"}
 ---
 
 ### Step by Step Guide for Configuring Vault + KeyCloak OIDC
