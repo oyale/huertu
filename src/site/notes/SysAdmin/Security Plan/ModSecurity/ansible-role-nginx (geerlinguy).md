@@ -1,5 +1,5 @@
 ---
-{"type":"role","url":"https://github.com/geerlinguy/ansible-role-nginx","dg-publish":true,"permalink":"/sys-admin/security-plan/mod-security/ansible-role-nginx-geerlinguy/","dgPassFrontmatter":true}
+{"type":"role","url":"https://github.com/geerlinguy/ansible-role-nginx","dg-publish":true,"topics":["ModSecurity"],"permalink":"/sys-admin/security-plan/mod-security/ansible-role-nginx-geerlinguy/","dgPassFrontmatter":true}
 ---
 
 # Ansible Role: Nginx
