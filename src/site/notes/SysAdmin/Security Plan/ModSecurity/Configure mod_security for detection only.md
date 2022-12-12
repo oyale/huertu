@@ -1,5 +1,5 @@
 ---
-{"type":"web","url":"https://www.plothost.com/kb/configure-mod-security-detection-only/","dg-publish":true,"permalink":"/sys-admin/security-plan/mod-security/configure-mod-security-for-detection-only/","dgPassFrontmatter":true}
+{"type":"web","url":"https://www.plothost.com/kb/configure-mod-security-detection-only/","dg-publish":true,"topics":["ModSecurity"],"permalink":"/sys-admin/security-plan/mod-security/configure-mod-security-for-detection-only/","dgPassFrontmatter":true}
 ---
 
 Do you want to use ModSecurity in a transparent mode? Meaning that no actions will be performed? You can use the SecRuleEngine command. The syntax is:
@@ -41,3 +41,6 @@ Don’t forget to restart your web server.
 
 **References:**  
 [Modsecurity wiki](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-(v2.x)#secruleengine)
+
+---
+Retrieved from `= this.url`
