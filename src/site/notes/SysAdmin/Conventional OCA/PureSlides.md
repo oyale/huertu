@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sys-admin/conventional-oca/pure-slides/","dgPassFrontmatter":true}
+{"dg-publish":true,"topics":["Commitizen OCA"],"permalink":"/sys-admin/conventional-oca/pure-slides/","dgPassFrontmatter":true}
 ---
 
 # Semantic Versioning and  Conventional Commits  in  OCA
