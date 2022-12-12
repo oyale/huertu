@@ -1,5 +1,5 @@
 ---
-{"type":"role","url":"https://github.com/perryk/ansible-role-nginx-modsec3-crs3","dg-publish":true,"permalink":"/sys-admin/security-plan/mod-security/ansible-role-nginx-modsec3-crs3/","dgPassFrontmatter":true}
+{"type":"role","url":"https://github.com/perryk/ansible-role-nginx-modsec3-crs3","dg-publish":true,"topics":["ModSecurity"],"permalink":"/sys-admin/security-plan/mod-security/ansible-role-nginx-modsec3-crs3/","dgPassFrontmatter":true}
 ---
 
 [ansible-galaxy](https://galaxy.ansible.com/perryk/nginx_modsec3_crs3)
