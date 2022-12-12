@@ -199,7 +199,7 @@ nginx_conf_template: "{{ playbook_dir }}/templates/nginx.conf.j2"
 
 Create the child template in the path you configured above and extend `geerlingguy.nginx` template file relative to your `playbook.yml`.
 
-```
+```yaml
 {% extends 'roles/geerlingguy.nginx/templates/nginx.conf.j2' %}
 
 {% block http_gzip %}
