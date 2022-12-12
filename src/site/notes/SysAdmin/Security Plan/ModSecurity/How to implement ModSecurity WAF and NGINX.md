@@ -1,5 +1,5 @@
 ---
-{"type":"web","url":"https://scribe.citizen4.eu/building-goalwise/how-to-implement-modsecurity-waf-with-nginx-15fdd42fa3","dg-publish":true,"permalink":"/sys-admin/security-plan/mod-security/how-to-implement-mod-security-waf-and-nginx/","dgPassFrontmatter":true}
+{"type":"web","url":"https://scribe.citizen4.eu/building-goalwise/how-to-implement-modsecurity-waf-with-nginx-15fdd42fa3","dg-publish":true,"topics":["ModSecurity"],"permalink":"/sys-admin/security-plan/mod-security/how-to-implement-mod-security-waf-and-nginx/","dgPassFrontmatter":true}
 ---
 
 Almost a third of world’s websites use NGINX web server and this number is growing as we speak. The reason more and more organisations are choosing NGINX as the go to web server is simple. It delivers good performance and is lightweight but robust at the same time.
@@ -226,3 +226,6 @@ $ curl https://localhost?blogtest=thisistestparam
 ### Conclusion
 
 There is no such thing as enough security. Having security at different layers mitigates the threat to a larger extent than having a single level of security. Web Application Firewalls acts as the last line of defence against a malicious attack. ModSecurity is an open source project which combines seamlessly with NGINX and also has the capability to apply OWASP core rule sets. This makes it a good place to start securing your applications.
+
+---
+Retrieved from `= this.url`
