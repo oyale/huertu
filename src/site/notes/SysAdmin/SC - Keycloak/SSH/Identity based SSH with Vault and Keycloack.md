@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"url":"https://scribe.citizen4.eu/identity-based-ssh-with-vault-and-keycloak-part-1-3-47ab2181ceae","permalink":"/sys-admin/sc-keycloak/ssh/identity-based-ssh-with-vault-and-keycloack/","dgPassFrontmatter":true}
+{"dg-publish":true,"url":"https://scribe.citizen4.eu/identity-based-ssh-with-vault-and-keycloak-part-1-3-47ab2181ceae","type":"web","permalink":"/sys-admin/sc-keycloak/ssh/identity-based-ssh-with-vault-and-keycloack/","dgPassFrontmatter":true}
 ---
 
 ### Step by Step Guide for Configuring Vault + KeyCloak OIDC
