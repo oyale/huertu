@@ -5,9 +5,10 @@
 
 El mio xardín dixital
 
-[[xardin/SC - MFA\|SC - MFA]]
-[[xardin/NGINX + Modsecurity\|NGINX + Modsecurity]]
+- [[xardin/NGINX + Modsecurity\|NGINX + Modsecurity]]
+- [[xardin/SC - MFA\|SC - MFA]]
+
 
 <style>
-h1  { text-decoration: line-through;}
+.cm-s-obsidian h1 { text-decoration: line-through;}
 </style>
