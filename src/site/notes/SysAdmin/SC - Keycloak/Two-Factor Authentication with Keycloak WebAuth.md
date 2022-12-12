@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"url":"https://ultimatesecurity.pro/post/webauthn","permalink":"/sys-admin/sc-keycloak/two-factor-authentication-with-keycloak-web-auth/","dgPassFrontmatter":true}
+{"dg-publish":true,"url":"https://ultimatesecurity.pro/post/webauthn","type":"web","permalink":"/sys-admin/sc-keycloak/two-factor-authentication-with-keycloak-web-auth/","dgPassFrontmatter":true}
 ---
 
 ## What will I cover in this post?
