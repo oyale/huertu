@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sys-admin/sc-keycloak/sc-mfa/"}
+{"dg-publish":true,"permalink":"/sys-admin/sc-keycloak/sc-mfa/","dgPassFrontmatter":true}
 ---
 
 [[SysAdmin/SC - Keycloak/SSH/Identity based SSH with Vault and Keycloack\|Identity based SSH with Vault and Keycloack]]
