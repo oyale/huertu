@@ -189,46 +189,6 @@ nginx_vhosts:
 
 You can either copy and modify the provided template, or extend it with [Jinja2 template inheritance](http://jinja.pocoo.org/docs/2.9/templates/#template-inheritance) and override the specific template block you need to change.
 
-### Example: Configure gzip in nginx configuration
-
-Set the `nginx_conf_template` to point to a template file in your playbook directory.
-
-```yaml
-nginx_conf_template: "{{ playbook_dir }}/templates/nginx.conf.j2"
-```
-
-Create the child template in the path you configured above and extend `geerlingguy.nginx` template file relative to your `playbook.yml`.
-
-```yaml
-{% extends 'roles/geerlingguy.nginx/templates/nginx.conf.j2' %}
-
-{% block http_gzip %}
-    gzip on;
-    gzip_proxied any;
-    gzip_static on;
-    gzip_http_version 1.0;
-    gzip_disable "MSIE [1-6]\.";
-    gzip_vary on;
-    gzip_comp_level 6;
-    gzip_types
-        text/plain
-        text/css
-        text/xml
-        text/javascript
-        application/javascript
-        application/x-javascript
-        application/json
-        application/xml
-        application/xml+rss
-        application/xhtml+xml
-        application/x-font-ttf
-        application/x-font-opentype
-        image/svg+xml
-        image/x-icon;
-    gzip_buffers 16 8k;
-    gzip_min_length 512;
-{% endblock %}
-```
 
 ## Dependencies
 
