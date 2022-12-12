@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"url":"https://scribe.citizen4.eu/identity-based-ssh-with-vault-and-keycloak-part-1-3-47ab2181ceae","type":"web","permalink":"/sys-admin/sc-keycloak/ssh/identity-based-ssh-with-vault-and-keycloack/","dgPassFrontmatter":true}
+{"dg-publish":true,"url":"https://scribe.citizen4.eu/identity-based-ssh-with-vault-and-keycloak-part-1-3-47ab2181ceae","type":"web","topics":["MFA Keycloak"],"permalink":"/sys-admin/sc-keycloak/ssh/identity-based-ssh-with-vault-and-keycloack/","dgPassFrontmatter":true}
 ---
+
 
 ### Step by Step Guide for Configuring Vault + KeyCloak OIDC
 
@@ -231,3 +232,6 @@ Upon successful login, you will be taken to vault and logged as OIDC user testin
 ![](https://cdn-images-1.medium.com/fit/c/800/593/1*1otcVUaw3KVtkucPk85oiA.gif)✍︎Login to Vault using Keycloak
 
 Now that we are able to Successfully Login to Vault using KeyCloak, let’s conclude this guide, work is in progress for Part 2, will be soon publishing it.
+
+--- 
+Retrieved from `= this.url`
