@@ -1,5 +1,5 @@
 ---
-{"type":"alternative","url":"https://github.com/nbs-system/naxsi","dg-publish":true,"permalink":"/sys-admin/security-plan/mod-security/naxi/","dgPassFrontmatter":true}
+{"type":"alternative","url":"https://github.com/nbs-system/naxsi","dg-publish":true,"topics":["WAF"],"permalink":"/sys-admin/security-plan/mod-security/naxi/","dgPassFrontmatter":true}
 ---
 
 
