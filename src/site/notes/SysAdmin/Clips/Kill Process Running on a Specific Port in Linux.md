@@ -3,7 +3,7 @@
 ---
 
 
-`=this.url`
+`= this.url`
 
 > ## Excerpt
 > Want to kill the processes running on specific ports? No need to know the process ID or name. You can terminate a process based on the port number it is using.
