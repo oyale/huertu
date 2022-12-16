@@ -19,10 +19,6 @@ In this post, I plan on:
 -   Explaining what is Keycloak Two-Factor Authentication
 -   Explaining how to configure Two-factor authentication in Keycloak
 
-### Do not forget to follow me on Twitter
-
-[![follow @ultimatesecpro on Twitter](https://ultimatesecurity.pro/img/twitter.jpg)](https://twitter.com/intent/follow?screen_name=ultimatesecpro)
-
 According to [wikipedia](https://en.wikipedia.org/wiki/Two-step_verification):  
 Two-factor authentication (also known as 2FA) is a method of confirming a user’s claimed identity by utilizing a combination of two different factors:
 
