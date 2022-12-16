@@ -24,7 +24,7 @@ Overall, SMS-based 2FA is the least secure option, while hardware token-based 2F
   
 As a consequence, it is straightforward for an adversary to circumvent it; the user doesn't even need to be conscious to have his finger put on a fingerprint reader or can hardly refuse to have his face scanned. A suitable approach would be to use biometrics as a substitute for a username (biometrics is something you are, not something you have nor know).  
   
-**Hardware token-based 2FA** is the most secure approach, since an attacker would need both the password and physical access to the hardware token in order to gain access to the account, making it much more difficult to compromise. In addition, the hardware tokens can be protected with a PIN, which bring them [plausible deniability](https://en.wikipedia.org/wiki/Plausible_deniability).
+**Hardware token-based 2FA** is the most secure approach, since an attacker would need both the password and physical access to the hardware token in order to gain access to the account, making it much more difficult to compromise. In addition, the hardware tokens can be protected with a PIN, which bring them [plausible deniability](https://en.wikipedia.org/wiki/Plausible_deniability#Use_in_cryptography) (see [OnlyKey article](https://crp.to/2017/04/25/plausible-deniability-onlykey/))
 
 
 ## NIST Special Publications
