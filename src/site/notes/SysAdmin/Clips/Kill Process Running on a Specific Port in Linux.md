@@ -2,8 +2,9 @@
 {"created":"2022-12-15T19:44:45 (UTC +01:00)","tags":null,"url":"https://linuxhandbook.com/kill-process-port/","author":"Team LHB","dg-publish":true,"permalink":"/sys-admin/clips/kill-process-running-on-a-specific-port-in-linux/","dgPassFrontmatter":true}
 ---
 
+From `= this.url`ç
 
-`= this.url`
+
 
 > ## Excerpt
 > Want to kill the processes running on specific ports? No need to know the process ID or name. You can terminate a process based on the port number it is using.
