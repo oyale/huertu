@@ -18,9 +18,9 @@ There are several different methods that can be used for 2FA, including:
   
 Overall, SMS-based 2FA is the least secure option, while hardware token-based 2FA is the most secure. Biometric-based 2FA should be avoided.  
   
-**Authenticator app-based 2FA** is an intermediate option with trade-offs in terms of convenience and security: at least, it should be implemented with at-rest encryption as a measure against physical access to the device. The principal drawback is that you need your phone with you, enough battery and Internet connection. There are also physical solutions that provide OTP codes, with their own pros and cons.  
+**Authenticator app-based 2FA** is an intermediate option with trade-offs in terms of convenience and security: at least, it should be implemented with at-rest encryption as a measure against physical access to the device. The principal drawback is that you need your phone with you, enough battery and ~~Internet connection~~. There are also physical solutions that provide OTP codes, with their own pros and cons.  
   
-Biometric-based 2FA is not recommended, as it uses an immutable, non-deniable identifier as a secret, so there is no plausible deniability.  
+**Biometric-based 2FA** is not recommended, as it uses an immutable, non-deniable identifier as a secret, so there is no plausible deniability.  
   
 As a consequence, it is straightforward for an adversary to circumvent it; the user doesn't even need to be conscious to have his finger put on a fingerprint reader or can hardly refuse to have his face scanned. A suitable approach would be to use biometrics as a substitute for a username (biometrics is something you are, not something you have nor know).  
   
