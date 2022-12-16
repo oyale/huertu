@@ -1,5 +1,5 @@
 ---
-{"created":"2022-12-16T11:30:10 (UTC +01:00)","tags":"sso,idm,openid connect,saml,kerberos,ldap","source":"https://www.keycloak.org/server/containers","author":"Keycloak Team","topics":["Keycloak"],"dg-publish":true,"permalink":"/sys-admin/keycloak/running-keycloak-in-a-container/","dgPassFrontmatter":true}
+{"created":"2022-12-16T11:30:10 (UTC +01:00)","tags":"sso,idm,openid connect,saml,kerberos,ldap","source":"https://www.keycloak.org/server/containers","author":"Keycloak Team","topics":["Keycloak"],"dg-publish":true,"type":"webclip","permalink":"/sys-admin/keycloak/running-keycloak-in-a-container/","dgPassFrontmatter":true}
 ---
 
 
