@@ -7,6 +7,7 @@ El mio xardín dixital
 
 - [[xardin/KeyCloak - MFA\|KeyCloak - MFA]]
 - [[xardin/NGINX Hardening\|NGINX Hardening]]
+- [[xardin/Odoo - Non OCA  modules\|Odoo - Non OCA  modules]]
 
 
 | Topic          | pages                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
