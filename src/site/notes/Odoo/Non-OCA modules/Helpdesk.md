@@ -14,3 +14,14 @@
 | [Helpdesk - Parent Ticket](https://github.com/ursais/osi-addons/tree/14.0/helpdesk_ticket_parent)                             | This module allows the helpdesk user to set a parent-children relationship between helpdesk tickets.                                                                                                                              |   
 
 
+### Mosonyi addons
+
+| name                                                                      | description                 |
+| ------------------------------------------------------------------------- | --------------------------- |
+| [odoo_helpdesk_privacy](https://github.com/mosonyi/odoo_helpdesk_privacy) | Privacy enabled on Helpdesk |
+
+### TrustCode addons
+
+| name                                                                                            | description                 |
+| ----------------------------------------------------------------------------------------------- | --------------------------- |
+| [helpdesk_contract](https://github.com/Trust-Code/trustcode-addons/tree/14.0/helpdesk_contract) | Integrates contracts information to helpdesk |
