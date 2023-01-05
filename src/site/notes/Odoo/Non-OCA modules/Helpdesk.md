@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/odoo/non-oca-modules/helpdesk/","dgPassFrontmatter":true}
+{"dg-publish":true,"topics":"Odoo modules","permalink":"/odoo/non-oca-modules/helpdesk/","dgPassFrontmatter":true}
 ---
 
 
