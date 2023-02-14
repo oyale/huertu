@@ -3,7 +3,7 @@
 ---
 
 - Why not use git when installing Odoo and its modules?
-	- ➕ Cowboy code sucks, but it happens. At least, we'd have traceability.
+	- ➕ Cowboy coding sucks, but it happens. At least, we'd have traceability.
 	- ✅ We still can have pinned versions.
 	- ❓ You're the same guy behind that sticker that said 'Cause with pip you can git…', huh?
 		- Yes, that was me. And if I was mistaken, I'll feel morally obligated to issue a new (patch) sticker. I promise it.
