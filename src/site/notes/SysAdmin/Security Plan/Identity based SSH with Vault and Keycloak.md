@@ -209,3 +209,128 @@ Upon successful login, you will be taken to vault and logged as OIDC user testin
 Login to Vault using Keycloak
 
 Now that we are able to Successfully Login to Vault using KeyCloak, let’s conclude this guide, work is in progress for Part 2, will be soon publishing it.
+
+# Part 2: Signed SSH Certificate
+In Part 1, we successfully configured OIDC Authentication using KeyCloak, now we’re gonna configure SSH Secrets Engine for Signed Certificates.
+
+## Enabling and Configuring SSH Engine
+
+**1 . Enable Secrets Engine**
+
+> Ensure that you are logged into Vault CLI and UI as root and run the following command.
+
+```
+vault secrets enable -path=ssh-client-signer ssh
+```
+
+It will enable an ssh engine at path `/ssh-client-signer` , you may verify the same from Vault UI.
+
+**2\. Configure CA for signing keys.**
+
+This will configure the CA and Generate a signing key.
+
+```
+vault write ssh-client-signer/config/ca generate_signing_key=true
+```
+
+The CA Public Key will be available at `[http://192.168.33.11:8200/v1/ssh-client-signer/public_key](http://192.168.33.11:8200/v1/ssh-client-signer/public_key)` . This will be added to the target servers trusted keys to enable access for signed users.
+
+**3\. Configure Signing Role.**
+
+Now that we have configure Signing Authority, we’ll create signing role which enables configuring fine-grained policy for user, defining who gets to sign using which role and ssh user, and access the group of servers allowed in the role.
+
+```
+vault write ssh-client-signer/roles/demo -<<"EOH"{   "algorithm_signer": "rsa-sha2-512",  "allow_user_certificates": true,  "allowed_users": "ubuntu",  "allowed_extensions": "permit-pty,permit-port-forwarding",  "default_extensions": [    {      "permit-pty": ""    }  ],  "key_type": "ca",  "default_user": "ubuntu",  "ttl": "30m0s"}EOH
+```
+
+This role will allow authorized user to sign the key to login as ‘ubuntu’ user on the target server, defined by **allowed\_users** parameter. The signed key will be valid for 30 minutes, which you can set as required with **ttl** parameter. For more details check out [API Document for SSH Secret Engines.](https://www.vaultproject.io/api-docs/secret/ssh)
+
+> configuring ‘permit-pty’ in default extension is necessary as it will allow terminal access.
+
+## Configure SSH Host
+
+**1.Get ssh access to vagrant host ‘ca\_demo’.**
+
+```
+vagrant ssh ca_demo
+```
+
+**2\. Download and Configure CA Public Key as Trusted.**
+
+-   Download Public Key
+
+```
+sudo curl -k https://192.168.33.11:8200/v1/ssh-client-signer/public_key -o /etc/ssh/trusted-user-ca-keys.pem
+```
+
+-   Edit `/etc/ssh/sshd_config` and add following line and restart sshd.service
+
+```
+sudo nano /etc/ssh/sshd_config#Place this line at the end on the file and saveTrustedUserCAKeys /etc/ssh/trusted-user-ca-keys.pem# Restart SSH Server to Apply the Changessudo systemctl restart sshd 
+```
+
+## **Client Authentication**
+
+**1.SSH into vagrant machine ‘ssh\_client’ and generate ssh keypair**
+
+```
+vagrant ssh ssh_clientssh-keygenGenerating public/private rsa key pair.Enter file in which to save the key (/home/vagrant/.ssh/id_rsa): Enter passphrase (empty for no passphrase): Enter same passphrase again: Your identification has been saved in /home/vagrant/.ssh/id_rsaYour public key has been saved in /home/vagrant/.ssh/id_rsa.pubThe key fingerprint is:SHA256:/rZ/5imrr/vW8Ex10sibkgGiJpSzUfgLCdrXFbLlvIo vagrant@ssh-clientThe key's randomart image is:+---[RSA 3072]----+|     +o o.       ||  . *  *o .      || o o B.oo. . . o ||. . * =  .  . + +||   . + .S    o =.||     ..o    + +  ||    E . .    B   ||         .. o *. ||         .*X=*o  |+----[SHA256]-----+
+```
+
+**2\. Configure Vault CLI.**
+
+Login the vault ui using oidc method and copy the token for login to cli.
+
+![](https://miro.medium.com/max/1400/1*Dgm5bHU5EXIXhuxswsi8Qg.gif)
+
+```
+export VAULT_ADDR=https://192.168.33.11:8200export VAULT_SKIP_VERIFY=true ## Use Token Copied from UIexport VAULT_TOKEN=s.6v1Tr7zU3wwpQn2QKYICWQWAecho $VAULT_TOKEN | vault login -
+```
+
+**3\. Signing SSH Public Key.**
+
+```
+vault write -field=signed_key ssh-client-signer/sign/demo \    public_key=@$HOME/.ssh/id_rsa.pub > $HOME/.ssh/id_rsa-cert.pub
+```
+
+This command will authorize the user with vault, and request for the public key at ‘~/.ssh/id\_rsa.pub’ to be signed by the CA. We are storing the signed certificate at `$HOME/.ssh/id_rsa-cert.pub` as ssh client by default looks for this file for any existing signed certificates and uses it to authenticate with ssh hosts. You can check the details of the signed certificate by running
+
+```
+ssh-keygen -Lf ~/.ssh/id_rsa-cert.pub
+```
+
+It will show similar results as below:
+
+```
+/home/vagrant/.ssh/id_rsa-cert.pub:        Type: ssh-rsa-cert-v01@openssh.com user certificate        Public key: RSA-CERT SHA256:/rZ/5imrr/vW8Ex10sibkgGiJpSzUfgLCdrXFbLlvIo        Signing CA: RSA SHA256:uKzJOaH/cPaxmDDgrwAEoo0eY9YUKYh2dqvrno1UYEc (using ssh-rsa)        Key ID: "vault-oidc-testing@example.com-feb67fe629abaffbd6f04c75d2c89b9201a22694b351f80b09dad715b2e5bc8a"        Serial: 9812201999919852695        Valid: from 2020-12-18T01:17:26 to 2020-12-18T01:27:56        Principals:                 ubuntu        Critical Options: (none)        Extensions:                 permit-pty
+```
+
+Here you can see the Principals (i.e users) that this certificate can be used to login with, its validity, etc.  
+In the Valid field you can see that it is issued with validity of 30 minutes.
+
+Now lets connect the our SSH Host. Its IP is 192.168.33.12 in our case.
+
+```
+ssh ubuntu@192.168.33.12
+```
+
+Lets recreate the certificate with 30s TTL, and SSH to the host.
+
+```
+vault write -field=signed_key ssh-client-signer/sign/demo public_key=@$HOME/.ssh/id_rsa.pub > $HOME/.ssh/id_rsa-cert.pub ttl="30s"ssh ubuntu@192.168.33.12
+```
+
+From the time key is signed, it will be valid for use for only 30 seconds, if you start ssh session with it, there it’s validity doesn’t depend on certificate’s TTL.  
+Session’s validity is dependent on ssh server configuration.  
+Now exit the session an try connecting to it without signing a new certificate. It will show permission denied as our certificate is not valid anymore.
+
+```
+ssh ubuntu@192.168.33.12ubuntu@192.168.33.12: Permission denied (publickey).
+```
+
+This feature of signed certificates, allows us to set validity to access ssh.Let’s say we setup max TTL to 24h so that every day a new certificate needs to be generated, removing any chances of long term access to the server.
+
+This combined with session timeout rules, cleanup rules for authorized keys removes, disallows any unauthorized access. And key signing process can simple controlled by configured ACL policies for users. This provides granular security policies to be applied in comparison to a simple SSH Key Pair.
+
+In the Next Part of this Series we’ll see how we can configure SSH OTP based authentication with help of vault-ssh-helper agent.
+
