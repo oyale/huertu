@@ -2,7 +2,7 @@
 {"created":"2022-12-15T19:44:45 (UTC +01:00)","tags":null,"url":"https://linuxhandbook.com/kill-process-port/","author":"Team LHB","dg-publish":true,"permalink":"/sys-admin/clips/kill-process-running-on-a-specific-port-in-linux/","dgPassFrontmatter":true}
 ---
 
-From `= this.url`ç
+From `= this.url`
 
 
 
