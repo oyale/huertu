@@ -20,7 +20,7 @@ Even without fully embracing Behavior-Driven Development (BDD), acceptance tests
 &NewLine;
 #### Hands on
 
-We will implement a basic acceptance test for the new Odoo module. Even though it was not developed following the BDD methodology, we will implement acceptance tests using the `behave` framework. When dealing with a web application, as in our case, we need an additional piece that allows us to interact automatically with the browser. [`selenium`](https://www.selenium.dev/) is the automation software we will use for this purpose.
+Even though it was not developed following the BDD methodology, we will implement acceptance tests for the new Odoo module using the `behave` framework. When dealing with a web application, as in our case, we need an additional piece that allows us to interact automatically with the browser. [`selenium`](https://www.selenium.dev/) is the automation software we will use for this purpose.
 &NewLine;
 #### Writing the requirements
 
