@@ -2,7 +2,7 @@
 {"created":"2022-12-16T11:25:12 (UTC +01:00)","type":"webclip","url":"https://ultimatesecurity.pro/post/2fa/","author":"ultimatesecurity","dg-publish":true,"topics":["Keycloak"],"permalink":"/sys-admin/keycloak/otp-two-factor-authentication-with-keycloak/","dgPassFrontmatter":true}
 ---
 
-From `=this.url`
+From https://ultimatesecurity.pro/post/2fa/
 
 
 > ## Excerpt
