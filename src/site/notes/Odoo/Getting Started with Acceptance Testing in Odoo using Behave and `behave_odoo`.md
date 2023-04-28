@@ -14,7 +14,7 @@ For example, if the code needs to consume an external API, the API's response wi
 &NewLine;
 At the other end of this spectrum, we find **acceptance tests**, which check functionality from the end-user's perspective, without considering the details of implementation. This type of test is closely related to Test-Driven Development, more specifically, to [Behaviour-Driven Development](https://behave.readthedocs.io/en/stable/philosophy.html), although they are not exclusive to this methodology.
 &NewLine;
-This methodology proposes a workflow in which **requirements are gathered in natural language** (better said, in a subset of natural language called Gherkins). After that, the code performing the tests is implemented, and only as last step, the code itself is developed.
+This methodology proposes a workflow in which **requirements are gathered in natural language** (better said, in a subset of natural language called Gherkin). After that, the code performing the tests is implemented, and only as last step, the code itself is developed.
 &NewLine;
 Even without fully embracing Behavior-Driven Development (BDD), acceptance tests can still be incredibly useful in ensuring that your software meets the expectations and requirements of its end-users. **By simulating real-world scenarios and user interactions, acceptance tests provide valuable insights into the overall user experience and functionality of your application**. These tests can help identify issues that may not be apparent through unit testing or other testing methods, allowing your development team to address problems before they become more significant
 &NewLine;
