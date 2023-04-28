@@ -2,7 +2,7 @@
 {"dg-publish":true,"topics":"testing, odoo, behave, selenium","permalink":"/odoo/getting-started-with-acceptance-testing-in-odoo-using-behave-and-behave-odoo/","dgPassFrontmatter":true}
 ---
 
-As a side project, I recently developed an (MVP) Odoo 14 module called, which centralizes information about deployed Odoo instances. This experience led me to revisit an old pending task: familiarizing myself with acceptance testing. 
+As a side project, I recently developed an (MVP) Odoo 14 module called [odoo\_instance](https://git.coopdevs.org/coopdevs/odoo/odoo-addons/odoo14-addons/-/tree/14.0/odoo_instance), which centralizes information about deployed Odoo instances. This experience led me to revisit an old pending task: familiarizing myself with acceptance testing. 
 &NewLine;
 Along the way, I created the `behave_odoo` package, which was born out of my need for a more efficient testing process. In this article, I'll share my journey and discuss how to implement acceptance testing effectively for Odoo modules using the `behave` framework, the web-automation package `selenium`  and the `behave_odoo` package.
 
@@ -112,7 +112,9 @@ To ensure a smooth experience when implementing acceptance tests in Odoo, here a
 3. Don't be afraid to iterate and improve your testing process over time. As you gain experience, you'll be able to identify areas for improvement and make the necessary adjustments to optimize your workflow.
 &NewLine;
 
-1By following these tips and continuously refining your testing approach, you'll be able to create robust and effective acceptance tests for your Odoo modules, ensuring that they meet the needs of your end-users and maintain a high level of quality throughout their development.
-
+By following these tips and continuously refining your testing approach, you'll be able to create robust and effective acceptance tests for your Odoo modules, ensuring that they meet the needs of your end-users and maintain a high level of quality throughout their development.
+&NewLine;
 ### Show me the code
-If you're interested in exploring the code for both the `odoo_instance` module and the tests I've described in this article, you can find them at the following repository: [https://git.coopdevs.org/coopdevs/odoo/odoo-addons/odoo14-addons/-/tree/14.0/odoo_instance](https://git.coopdevs.org/coopdevs/odoo/odoo-addons/odoo14-addons/-/tree/14.0/odoo_instance). Happy testing!
+If you're interested in exploring the code for both the `odoo_instance` module and the tests I've described in this article, you can find them at the following repository: [https://git.coopdevs.org/coopdevs/odoo/odoo-addons/odoo14-addons/-/tree/14.0/odoo_instance](https://git.coopdevs.org/coopdevs/odoo/odoo-addons/odoo14-addons/-/tree/14.0/odoo_instance). 
+&NewLine;
+Happy testing!
