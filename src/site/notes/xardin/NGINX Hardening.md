@@ -15,6 +15,7 @@
 | [[SysAdmin/Security Plan/ModSecurity/Configure mod_security for detection only\|Configure mod_security for detection only]]                       | web         |
 | [[SysAdmin/Security Plan/ModSecurity/How to implement ModSecurity WAF and NGINX\|How to implement ModSecurity WAF and NGINX]]                     | web         |
 
+{ .block-language-dataview}
 ### Stuff
 
 | File                                                                                                                 | type           |
@@ -24,3 +25,5 @@
 | [[SysAdmin/Security Plan/ngx_security_headers\|ngx_security_headers]]                                             | nginx-module   |
 | [[SysAdmin/Security Plan/Nikto\|Nikto]]                                                                           | server-scanner |
 | [[SysAdmin/Security Plan/Crowdsec\|Crowdsec]]                                                                     | Standalone     |
+
+{ .block-language-dataview}
