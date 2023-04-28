@@ -1,5 +1,5 @@
 ---
-{"created":"2022-12-29T01:36:06 (UTC +01:00)","tags":"cheatsheet,nano,editor,shortcuts,keystrokes,functions,operations,commands","source":"https://nano-editor.org/cheatsheet.html","author":"Benno Schulenberg","dg-publish":true,"permalink":"/sys-admin/cheatsheet-for-gnu-nano/","dgPassFrontmatter":true}
+{"created":"2022-12-29T01:36:06 (UTC +01:00)","tags":["cheatsheet,nano,editor,shortcuts,keystrokes,functions,operations,commands"],"source":"https://nano-editor.org/cheatsheet.html","author":"Benno Schulenberg","dg-publish":true,"permalink":"/sys-admin/cheatsheet-for-gnu-nano/","dgPassFrontmatter":true}
 ---
 
 
