@@ -10,3 +10,5 @@
 | [[Odoo/Non-OCA modules/Minutes\|Minutes]]             |
 | [[Odoo/Non-OCA modules/Usability\|Usability]]         |
 | [[Odoo/Non-OCA modules/Project\|Project]]             |
+
+{ .block-language-dataview}
