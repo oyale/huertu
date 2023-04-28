@@ -17,9 +17,10 @@
 
 ### Stuff
 
-| File                                                                     | type           |
-| ------------------------------------------------------------------------ | -------------- |
-| [[SysAdmin/Security Plan/lynis\|lynis]]                               | auditing       |
-| [[SysAdmin/Security Plan/ngx_security_headers\|ngx_security_headers]] | nginx-module   |
-| [[SysAdmin/Security Plan/Nikto\|Nikto]]                               | server-scanner |
-| [[SysAdmin/Security Plan/Crowdsec\|Crowdsec]]                         | Standalone     |
+| File                                                                                                                 | type           |
+| -------------------------------------------------------------------------------------------------------------------- | -------------- |
+| [[SysAdmin/Security Plan/Identity based SSH with Vault and Keycloak\|Identity based SSH with Vault and Keycloak]] | \-             |
+| [[SysAdmin/Security Plan/lynis\|lynis]]                                                                           | auditing       |
+| [[SysAdmin/Security Plan/ngx_security_headers\|ngx_security_headers]]                                             | nginx-module   |
+| [[SysAdmin/Security Plan/Nikto\|Nikto]]                                                                           | server-scanner |
+| [[SysAdmin/Security Plan/Crowdsec\|Crowdsec]]                                                                     | Standalone     |
