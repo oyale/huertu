@@ -3,27 +3,7 @@
 ---
 
 
-# Apple Silicon M1: How to run x86 and ARM Virtual Machines on it? | by Dmitry Yarygin | Medium
-
-> ## Excerpt
-> Apple Silicon M1 is a new and emerging platform that quickly drafts more and more attention to it. I’ve recently written an article discussing why I personally think that some people might postpone…
-
----
 # Apple Silicon M1: How to run x86 and ARM Virtual Machines on it?
-
-[
-
-![Dmitry Yarygin](https://miro.medium.com/v2/resize:fill:88:88/1*aGx1bQNXAeXx_CvtXzgbvg.jpeg)
-
-
-
-
-
-
-
-
-
-](https://nomadic-dmitry.medium.com/?source=post_page-----cdd9d9054483--------------------------------)
 
 [Dmitry Yarygin](https://nomadic-dmitry.medium.com/?source=post_page-----cdd9d9054483--------------------------------)
 
