@@ -2,6 +2,8 @@
 {"dg-publish":true,"permalink":"/rfc-co-c-coop/","dgPassFrontmatter":true}
 ---
 
+
+RFC - CoopCoC
 # Code of Conduct for Our Cooperative Open Source Project
 
 ## Purpose
