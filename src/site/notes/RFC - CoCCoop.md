@@ -16,10 +16,10 @@ Our open-source software project is committed to fostering a cooperative, solida
 
 ## Expected Behavior
 
-1. **Respect:** Treat all community members with kindness and respect. Remember that everyone is voluntarily contributing their time and expertise to improve the project. 
+1. **Respect:** Treat all community members with kindness and respect. Remember that everyone is contributing their time and expertise to improve the project. 
 2. **Patience:** Demonstrate patience and understanding towards others, especially when discussing complex or controversial issues.
 3. **Constructive Criticism:** Provide feedback that is constructive and helpful. This includes being open to receiving such feedback. 
-4. **Openness:** All technical debates should take place in the project's repository issues, ensuring everyone has the chance to contribute to the discussion.
+4. **Openness:** All trascendental technical debates should take place in the project's repository issues, ensuring everyone has the chance to contribute to the discussion.
 5. **Inclusivity:** Promote an inclusive and supportive environment. Every contribution is important and should be recognized.
 
 ## Unacceptable Behavior
@@ -32,7 +32,7 @@ Our open-source software project is committed to fostering a cooperative, solida
 
 ## Reporting and Enforcement
 
-Violations of this Code of Conduct may result in actions aimed at facilitating conflict resolution and repairing any harm caused. These measures will be adapted according to the evolution of the situation and the process. Actions could range from mediation between involved parties to temporary or permanent restrictions from contributing. If you witness or experience any violations, please report them by sending an email to info@example.coop. 
+Violations of this Code of Conduct will result in actions aimed at facilitating conflict resolution and repairing any harm caused. These measures will be adapted according to the evolution of the situation and the process. Actions could range from mediation between involved parties to temporary or permanent restrictions from contributing. If you witness or experience any violations, please report them by sending an email to info@example.coop. 
 
 Our project maintainers will review and investigate all reports, and then take action that is deemed necessary and appropriate based on the progress and nature of the process. We are committed to ensuring that all our community members feel safe and respected, and we appreciate your help in maintaining this environment.
 
