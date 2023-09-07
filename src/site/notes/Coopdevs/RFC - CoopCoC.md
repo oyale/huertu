@@ -22,7 +22,7 @@ Our open-source software project is committed to fostering a cooperative, solida
 3. **Constructive Criticism:** Provide feedback that is constructive and helpful. This includes being open to receiving such feedback. 
 4. **Openness:** All trascendental technical debates should take place in the project's repository issues, ensuring everyone has the chance to contribute to the discussion.
 5. **Inclusivity:** Promote an inclusive and supportive environment. Every contribution is important and should be recognized.
-6. **Transparency:** *If it is not in the repository, it has not happened*, or, in other words, the single source of truth is the repository and its issues. Document everything, including writing down in an issue,  f.e., discussions that have
+6. **Transparency:** *If it is not in the repository, it has not happened*, or, in other words, the single source of truth is the repository and its issues. Document everything, fncluding, e.g, writting down discussions that have been held elsewhere.
 
 ## Unacceptable Behavior
 
