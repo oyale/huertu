@@ -51,16 +51,17 @@ Once the onboarding PR was merged, Renovate bot will start creating new branches
 
 Put `"enabled": false` into an object inside the `packageRules` array. For instance, to disable dependency updates for the dependency named `neutrino`, the `packageRules` array should look as follows:
 
-```
+```json
 "packageRules": [
   {
     "matchPackageNames": ["neutrino"],
     "enabled": false
   }
-]Code language: JSON / JSON with Comments (json)
+]
 ```
 
 An alternative to the `enabled` setting is the `enabledManagers` option, where you configure an _allow_\-list of package managers (see [official docs](https://docs.renovatebot.com/configuration-options/#enabledmanagers) for more information), e.g.:
+
 
 ```json
 {
@@ -83,6 +84,7 @@ If the dependencies your application uses do change _often_, Renovate’s activi
 Using `schedule` ([docs](https://docs.renovatebot.com/configuration-options/#schedule)), you can tell Renovate bot to only update the dependency on specific times of day/week/month.
 
 Example use case #1: avoid interference during working hours
+
 
 Set `schedule` to `["after 10pm every weekday", "before 5am every weekday", "every weekend"]`, to stop Renovate bot from creating branches and PRs during working hours (in this example: Mo-Fri between 5 AM – 10 PM each). Without such a rule, the bot might interrupt the merge process of _your own_ feature branches into the default branch. In this example, the bot is limited to only update dependencies on weekends (at _any_ time during weekends!), _or_ outside of working hours during week days. Regarding the logic: the bot logically ORs the different array entries, but ANDs the meaning of the words _within_ a specific entry. If none of the entries evaluate to `true`, the bot will not update this dependency in this execution cycle.
 
