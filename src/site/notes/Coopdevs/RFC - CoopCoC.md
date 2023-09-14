@@ -34,7 +34,7 @@ Our open-source software project is committed to fostering a cooperative, solida
 
 ## Reporting and Enforcement
 
-Violations of this Code of Conduct will result in actions aimed at facilitating conflict resolution and repairing any harm caused. These measures will be adapted according to the evolution of the situation and the process. Actions could range from mediation between involved parties to temporary or permanent restrictions from contributing. If you witness or experience any violations, please report them by sending an email to info@example.coop. 
+Violations of this Code of Conduct will result in actions aimed at facilitating conflict resolution and repairing any harm caused. These measures will be adapted according to the evolution of the situation and the process. Actions could range from mediation between involved parties to temporary or permanent restrictions from contributing. If you witness or experience any violations, please report them by sending an email to cures@coopdevs.org. 
 
 Our project maintainers will review and investigate all reports, and then take action that is deemed necessary and appropriate based on the progress and nature of the process. We are committed to ensuring that all our community members feel safe and respected, and we appreciate your help in maintaining this environment.
 
