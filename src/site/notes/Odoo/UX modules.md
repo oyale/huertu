@@ -24,3 +24,9 @@
 | [mass_editing](https://github.com/OCA/server-ux/tree/14.0/mass_editing)                                                      | Mass Editing                                                  |
 | [sequence_reset_period](https://github.com/OCA/server-ux/tree/14.0/sequence_reset_period)                                    | Auto-generate sequence period ranges                          |
 | [report_qweb_element_page_visibility](https://github.com/OCA/reporting-engine/tree/14.0/report_qweb_element_page_visibility) | Control when showing element in reports (first/last page)     |
+
+### Non-OCA
+
+| Module                                                                                         | Feature                                                                       |
+| ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| [month_year_widget](https://github.com/JDavidMoreno/month_year_widget) | Creates a new field widget to make Date fields work just with Month and Years | 
